@@ -29,7 +29,7 @@ public class LogoutInteractor implements LogoutInputBoundary {
         // * tell the presenter to prepare a success view.
         final String user = logoutInputData.getUsername();
 
-        userDataAccessObject.setCurrentUsername(user);
+        userDataAccessObject.setCurrentUsername(null);
         final LogoutOutputData logoutOutputData = new LogoutOutputData(user, false);
         logoutPresenter.prepareSuccessView(logoutOutputData);
     }

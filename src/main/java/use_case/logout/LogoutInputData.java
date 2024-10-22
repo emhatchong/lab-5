@@ -1,5 +1,7 @@
 package use_case.logout;
 
+import data_access.InMemoryUserDataAccessObject;
+
 /**
  * The Input Data for the Logout Use Case.
  */
@@ -8,7 +10,7 @@ public class LogoutInputData {
     private String username;
 
     public String getUsername() {
-        return this.username;
+        return username;
     }
 
     public void resetUsername() {
